@@ -23,7 +23,7 @@ default_args = {
 }
 
 with DAG(
-    "main",
+    dag_id="main",
     default_args=default_args,
     description="Metaplane main Airflow DAG",
     schedule_interval=timedelta(days=1),
