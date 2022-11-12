@@ -1,4 +1,4 @@
 locations:
-  - location_name: example_location
+  - location_name: fivetran-dbtcloud-simple
     code_source:
-      package_name: my_dagster_project
+      package_name: fivetran_dbtcloud_simple

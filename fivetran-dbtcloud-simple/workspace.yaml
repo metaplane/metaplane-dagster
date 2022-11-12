@@ -1,3 +1,2 @@
 load_from:
-  - python_package: my_dagster_project
   - python_package: fivetran_dbtcloud_simple
