@@ -4,12 +4,12 @@ from .fivetran_simple import sync_hubspot, sync_linkedin_company_pages, sync_str
 
 # configure an operation to run the specific job
 run_dbt_nightly_sync = dbt_cloud_run_op.configured(
-    {"job_id": 33333}, name="run_dbt_nightly_sync"
+    {"job_id": 117628}, name="run_dbt_nightly_sync"
 )
 
 # configure a resource to connect to your dbt Cloud instance
 my_dbt_cloud_resource = dbt_cloud_resource.configured(
-    {"auth_token": {"env": "DBT_CLOUD_AUTH_TOKEN"}, "account_id": 11111}
+    {"auth_token": {"env": "DBT_CLOUD_AUTH_TOKEN"}, "account_id": 6494}
 )
 
 # create a job that uses your op and resource
