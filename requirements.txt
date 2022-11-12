@@ -3,3 +3,5 @@ dagster
 dagster-cloud
 dagster-airflow
 dagster-aws
+dagster-fivetran
+dagster-dbt
