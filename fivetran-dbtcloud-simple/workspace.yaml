@@ -1,2 +1,0 @@
-load_from:
-  - python_package: fivetran_dbtcloud_simple
