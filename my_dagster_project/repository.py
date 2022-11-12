@@ -3,6 +3,7 @@ import os
 from dagster import define_asset_job, load_assets_from_package_module, repository, with_resources
 
 from my_dagster_project import assets
+from fivetran_dbt_cloud_simple import assets
 
 
 @repository
@@ -43,4 +44,5 @@ def my_dagster_project():
     return [
         load_assets_from_package_module(assets),
         define_asset_job(name="all_assets_job"),
-    ]
+        my_simple_fivetran_job
+    ] + fivetran_assets

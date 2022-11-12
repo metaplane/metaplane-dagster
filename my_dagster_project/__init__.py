@@ -1,1 +1,1 @@
-from .repository import my_dagster_project
+from .repository import my_dagster_project, fivetran_dbt_cloud_simple

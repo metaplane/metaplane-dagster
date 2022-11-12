@@ -1,0 +1,1 @@
+from .repository import fivetran_dbt_cloud_simple
