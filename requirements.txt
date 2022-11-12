@@ -1,3 +1,4 @@
 dagit
 dagster
 dagster-cloud
+dagster-aws
