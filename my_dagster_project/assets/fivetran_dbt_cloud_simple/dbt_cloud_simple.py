@@ -1,4 +1,4 @@
-from dagster import job, ScheduleDefinition
+from dagster import job
 from dagster_dbt import dbt_cloud_resource, dbt_cloud_run_op
 from .fivetran_simple import sync_hubspot, sync_linkedin_company_pages, sync_stripe, fivetran_instance
 
@@ -16,5 +16,3 @@ my_dbt_cloud_resource = dbt_cloud_resource.configured(
 @job(resource_defs={"dbt_cloud": my_dbt_cloud_resource, "fivetran": fivetran_instance})
 def my_dbt_cloud_job():
     run_dbt_nightly_sync(start_after=[sync_stripe(), sync_hubspot(), sync_linkedin_company_pages()])
-
-basic_schedule = ScheduleDefinition(job=my_dbt_cloud_job, cron_schedule="0 0 * * *")
