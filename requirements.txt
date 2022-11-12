@@ -1,4 +1,5 @@
 dagit
 dagster
 dagster-cloud
+dagster-airflow
 dagster-aws

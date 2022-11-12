@@ -1,7 +1,6 @@
 import os
 
 from dagster import define_asset_job, load_assets_from_package_module, repository, with_resources
-from dagster_aws.s3 import s3_pickle_io_manager, s3_resource
 
 from my_dagster_project import assets
 
