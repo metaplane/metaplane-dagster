@@ -2,3 +2,5 @@ dagit
 dagster
 dagster-cloud
 dagster-aws
+dagster-fivetran
+dagster-dbt
