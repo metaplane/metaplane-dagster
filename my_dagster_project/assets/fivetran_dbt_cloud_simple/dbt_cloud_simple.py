@@ -13,7 +13,7 @@ my_dbt_cloud_resource = dbt_cloud_resource.configured(
 )
 
 # create a job that uses your op and resource
-@job(resource_defs={"dbt_cloud": my_dbt_cloud_resource, "fivetran": fivetran_instance})
+@job(resource_defs={"dbt_cloud": my_dbt_cloud_resource, "fivetran": fivetran_instance}, tags={"type": "main_daily"})
 def my_dbt_cloud_job():
     run_dbt_nightly_sync(start_after=[sync_stripe(), sync_hubspot(), sync_linkedin_company_pages()])
 
