@@ -4,3 +4,4 @@ dagster-cloud
 dagster-aws
 dagster-fivetran
 dagster-dbt
+GitPython
