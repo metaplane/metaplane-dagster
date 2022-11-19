@@ -8,7 +8,6 @@ if __name__ == "__main__":
             "dagster",
             "dagster-dbt",
             "dagster-fivetran",
-            "GitPython"
         ],
         extras_require={"dev": ["dagit", "pytest"]},
     )
