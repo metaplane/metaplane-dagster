@@ -15,6 +15,5 @@ def my_dagster_project():
         define_asset_job(name="all_assets_job"),
         fivetran_assets,
         my_dbt_cloud_job,
-        basic_schedule,
-        dbt_assets]
+        basic_schedule]
 

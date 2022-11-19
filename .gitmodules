@@ -1,3 +1,0 @@
-[submodule "path_to_submodule"] 
-  path = metaplane-dbt 
-  url = git://https://github.com/metaplane/metaplane-dbt
