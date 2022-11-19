@@ -7,7 +7,8 @@ if __name__ == "__main__":
         install_requires=[
             "dagster",
             "dagster-dbt",
-            "dagster-fivetran"
+            "dagster-fivetran",
+            "GitPython"
         ],
         extras_require={"dev": ["dagit", "pytest"]},
     )
