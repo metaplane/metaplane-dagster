@@ -3,7 +3,7 @@ from dagster import job, ScheduleDefinition, file_relative_path, define_asset_jo
 #let's see if we need this as in theory the sources in the dbt project should get mapped
 from dagster_dbt import load_assets_from_dbt_project
 
-DBT_PROJECT_PATH = file_relative_path(__file__, "../../../metaplane-dbt")
+DBT_PROJECT_PATH = file_relative_path(__file__, "../../dbtproj")
 DBT_PROFILES = file_relative_path(__file__, "../../resources")
 
 dbt_assets = load_assets_from_dbt_project(project_dir=DBT_PROJECT_PATH, profiles_dir=DBT_PROFILES)
