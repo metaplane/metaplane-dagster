@@ -47,7 +47,7 @@ jobs:
       - name: Checkout DBT
         uses: actions/checkout@v3
         with:
-          repository: metaplane/metaplane-dagster
+          repository: metaplane/metaplane-dbt
           ref: ${{ github.event.inputs.dbtref }}
           path: ./dbtproj
 

@@ -42,7 +42,7 @@ jobs:
       - name: Checkout DBT
         uses: actions/checkout@v3
         with:
-          repository: metaplane/metaplane-dagster
+          repository: metaplane/metaplane-dbt
           path: ./dbtproj
       
       #  Remainder modified from the default dagster-cloud-serverless-deploy action
