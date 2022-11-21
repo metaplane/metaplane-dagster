@@ -1,0 +1,1 @@
+dbt deps --project-dir ./dbtproj --profiles-dir my_dagster_project/resources/
